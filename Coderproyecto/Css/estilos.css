@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:hover {
+            background:white;
+            transition: all 0.7s linear;
+            border-radius: 3px;
+}
+
+body{
+    background-image: url(https://www.elclasicofutbol5.com/wp-content/uploads/2015/06/cancha-dimensiones-futbol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    zoom: 1;
+}
+  
+
