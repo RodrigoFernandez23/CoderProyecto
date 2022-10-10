@@ -46,7 +46,7 @@ function pedirDatos(){
 
 
         default:
-            alert('hasta pronto!')
+            alert('Ingreso un dato invalido, Reintentelo.')
 
 
     }
@@ -61,3 +61,35 @@ function pedirDatos(){
 
 
  pedirDatos()
+ 
+
+function canchas(Nombre, Disponibilidad, Capacidad, Horarios_Disp,precio){
+    this.Nombre = Nombre;
+    this.Disponibilidad = Disponibilidad;
+    this.Capacidad = Capacidad;
+    this.Horarios_Disp = Horarios_Disp;
+    this.precio= precio 
+}
+
+const camp_Nou = new canchas('Camp Nou',true,22,'15.30hs, 19.00hs, 22.30hs,', 3000);
+const santiagoBernabeu = new canchas('Santiago Bernabeu', true,11,'11.00hs, 14.00hs',1500);
+const wandaMetropolitano = new canchas('Wanda Metropolitano', false,22, 'No hay horarios disponibles',3000);
+
+
+
+function inscripcion(nombreInscripto, mail, cancha,cantJug){
+    this.nombreInscripto = nombreInscripto;
+    this.mail = mail;
+    this.cancha= cancha;
+    this.cantJug= cantJug;
+}
+
+const creacionReserva = ()=>{
+    let registroNomb=prompt('Nombre del Usuario que reseva:');
+    let registroMail=prompt('Ingrese una direccion de Mail de contacto:');
+    let registroJug=Number(prompt('Inserte cantidad de jugadores:'));
+    let jugCancha=Number(prompt('Inserte numero de cancha a jugar:'));
+
+const reserva = new inscripcion(registroNomb,registroMail,registroJug,jugCancha);
+    
+}

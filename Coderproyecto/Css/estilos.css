@@ -39,5 +39,32 @@ body{
     background-size: cover;
     zoom: 1;
 }
-  
+
+
+.contenedor{
+    position: relative;
+    top: 250px;
+    left: 50px;
+    width: 1270px;
+    height: 280px;
+    overflow-x: scroll;
+    background-color: #1c2a44;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img-contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 15px black;
+    margin-right: 50px;
+}
 
